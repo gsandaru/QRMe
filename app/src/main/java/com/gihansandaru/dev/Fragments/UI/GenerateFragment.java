@@ -51,6 +51,7 @@ public class GenerateFragment extends BaseFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         fragmentGenerateBinding.generateBottomNavigationBar.setSelectedItemId(R.id.menuItemGenerate);
+        fragmentGenerateBinding.generateHomeToolbar.setTitle("Generate QR Code");
 
         fragmentGenerateBinding.generateBtnFlasher.setOnClickListener(v -> {
             if (!TextUtils.isEmpty(fragmentGenerateBinding.generateEdittext.getText().toString().trim())) {

@@ -61,7 +61,7 @@ public class ResultFragment extends BaseFragment implements View.OnClickListener
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        fragmentResultBinding.homeToolbar.setTitle("Result");
+        fragmentResultBinding.homeToolbar.setTitle("Decoded QR Code");
         fragmentResultBinding.homeToolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
         fragmentResultBinding.homeToolbar.setNavigationOnClickListener(v ->
                 fragmentTransactionListener.replaceFragment(HomeFragment.getInstance(), null)

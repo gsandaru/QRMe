@@ -61,7 +61,7 @@ public class HomeFragment extends BaseFragment implements  View.OnClickListener 
 
         fragmentScanBinding.scanBottomNavigationBar.setSelectedItemId(R.id.menuItemScan);
         fragmentScanBinding.scanBottomNavigationBar.setOnNavigationItemSelectedListener(this);
-        fragmentScanBinding.scanHomeToolbar.setTitle("SCAN");
+        fragmentScanBinding.scanHomeToolbar.setTitle("Scan QR Code");
         decoratedBarcodeView = fragmentScanBinding.scanDecoratedBarcodeView;
         fragmentScanBinding.scanDecoratedBarcodeView.resume();
         fragmentScanBinding.scanDecoratedBarcodeView.decodeSingle(new BarcodeCallback() {
